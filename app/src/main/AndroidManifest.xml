@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ryans.androidphotos">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AlbumActivity"
+           android:label="Select a photo"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".PhotoActivity"
+            android:label="Photo view"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".TagActivity"
+            android:label="Tag management"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".MovePhotoActivity"
+            android:label="Select an album"
+            android:theme="@style/AppTheme"/>
+
+
+        <activity android:name=".SlideshowActivity"
+            android:label="Manual Slideshow"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ImageSearchActivity"
+            android:label="Search for images"
+            android:theme="@style/AppTheme"/>
+
+    </application>
+
+</manifest>
